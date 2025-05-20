@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estrangeiro ou não</title>
+    <title>Estrangeiro ou Brasileiro</title>
 </head>
 <body>
-    <h1></h1>
+    <h1>Alfandega</h1>
+    Qual seu pais de Naturalidade: <input type="text" name="pais" id="pais"> 
+    <input type="button" value="Verificar" onclick="Verificar()">
+    <div id="Res"></div>
+    <script>
+        function Verificar(){
+            var pais = window.document.querySelector('input#pais')
+            var res = window.document.querySelector('div#Res')
+            if(pais = brasil){
+                res.innerHTML = "<p>Voce é <strong>Brasileiro<strong></p>"
+            }
+            else{
+                res.innerHTML = "</p>voce é <strong>Estrangeiro<strong></p>"
+            }
+        }
+    </script>
 </body>
 </html>
