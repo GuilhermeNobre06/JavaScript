@@ -7,20 +7,20 @@
 </head>
 <body>
     <h1>Alfandega</h1>
-    Qual seu pais de Naturalidade: <input type="text" name="pais" id="pais"> 
+    Qual seu pais de Naturalidade: 
+    <input type="text" name="pais" id="pais"> 
     <input type="button" value="Verificar" onclick="Verificar()">
     <div id="Res"></div>
     <script>
         function Verificar(){
             var pais = window.document.querySelector('input#pais')
             var res = window.document.querySelector('div#Res')
-            var P = Text(pais.value)
-            res.innerHTML = `<p>Seu Pais é ${P}</p>`
-            if(pais = brasil){
-                res.innerHTML = `<p>Voce é <strong>Brasileiro<strong></p>`
-            }
-            else{
-                res.innerHTML = `</p>voce é <strong>Estrangeiro<strong></p>`
+            var P = pais.value.trim().toLowerCase();
+            
+            if(P === 'brasil'){
+                res.innerHTML = `<p>Voce é <strong>Brasileiro</strong></p>`
+            } else {
+                res.innerHTML = `</p>voce é <strong>Estrangeiro</strong></p>`
             }
         }
     </script>
