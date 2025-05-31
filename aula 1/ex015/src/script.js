@@ -1,5 +1,5 @@
     const agora = new Date()
-    const hora = 15
+    const hora = agora.getHours()
     const img = document.getElementById('foto')
 
     let caminho = "";
@@ -14,6 +14,10 @@
         caminho = "src/img/nascer.jpg";
     } else if (hora < 18){
         document.getElementById('b').style.backgroundColor = '#FFA500'
-        caminho = "src/img/nascer.jpg";
+        caminho = "src/img/tarde.jpg";
+    } else {
+        document.getElementById('b').style.backgroundColor = '#02070D'
+        caminho = "src/img/noite.jpg";
+        document.getElementById('titulo').style.color = 'white'
     }
     img.src = caminho
