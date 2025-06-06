@@ -1,0 +1,38 @@
+@charset = "UTF-8";
+
+*{
+    padding: 0;
+    margin:0;
+}
+
+body{
+    font-family: arial;
+    height: 100vh;
+    width: 100vh;
+}
+
+h1{
+    display: flex;
+    align: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#container{
+    background: lightblue;
+    width: 350px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-itens: center;
+    margin: auto;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
