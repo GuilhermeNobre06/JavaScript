@@ -11,14 +11,17 @@
     <div id="container">
         <p><label for="nasc">Ano de Nascimento:</label> <input type="number" name="nasc" id="nasc" min="1900" max="2025"></p>
         <p> sexo: 
-            <label for="sex">Masculino </label><input type="radio" name="sex" id="sm">
-            <label for="sex">Feminino </label><input type="radio" name="sex" id="sf">
+            <input type="radio" name="sexo" id="sm" value="M"><label for="sm"> Masculino</label>
+            <input type="radio" name="sexo" id="sf" value="F"><label for="sf"> Feminino</label>
         </p>
-        <p><input type="submit" value="Verificar"></p>
+        <p><input type="submit" value="Verificar" onclick="VerificarIdade()"></p>
+        <p id="identificador"></p>
+        <img id="foto" alt="">
         <p>Preencha os dados acima para ver o resultado!</p>
     </div>
     <footer>
         <p>&#169; <a href="https://github.com/GuilhermeNobre06" target="_blank">Guilherme Nobre</a></p>
     </footer>
+    <script src="src/script.js"></script>
 </body>
 </html>
