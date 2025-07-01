@@ -29,6 +29,7 @@ h1{
     margin: auto;
     padding: 10px;
     border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.445);
 }
 
 footer{
